@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="icon" type="image/png" href="weather.png"> <!-- Favicon -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Icons -->
+</head>
+<body>
+  <div class="app-wrap">
+    <header>
+      <div class="search-container">
+        <input type="text" autocomplete="off" class="search-box" placeholder="Enter city..." />
+        <select class="country-select">
+          <option value="">Any Country</option>
+          <option value="US">United States</option>
+          <option value="GB">United Kingdom</option>
+          <option value="IN">India</option>
+          <option value="CA">Canada</option>
+          <option value="AU">Australia</option>
+        </select>
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+    </header>
+    <main>
+      <div class="weather-box">
+        <section class="location">
+          <div class="city"><i class="fas fa-map-marker-alt"></i> New York, US</div>
+          <div class="date">Wednesday 22 July 2020</div>
+        </section>
+        <div class="current">
+          <div class="temp"><i class="fas fa-thermometer-half"></i> 15<span>°C</span></div>
+          <div class="weather"><i class="fas fa-cloud-sun"></i> Sunny</div>
+          <div class="hi-low"><i class="fas fa-temperature-low"></i> 13°C / 16°C</div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

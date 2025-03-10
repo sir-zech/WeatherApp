@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('background.gif');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-wrap {
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+/* Search container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Search bar */
+.search-box {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  outline: none;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+.search-box::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Country dropdown */
+.country-select {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.6); /* Darker background */
+  color: white;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.country-select:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Search button */
+.search-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box:focus,
+.country-select:focus {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Weather Box */
+.weather-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Weather Details */
+.location .city {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.current {
+  margin-top: 20px;
+}
+
+.current .temp {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.current .weather {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.current .hi-low {
+  font-size: 20px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
