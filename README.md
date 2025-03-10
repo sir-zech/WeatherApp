@@ -67,7 +67,7 @@ https://api.openweathermap.org/data/2.5/weather?q={city},{country}&units=metric&
 ---
 
 ## **📸 Screenshot**  
-![Weather App Screenshot](screenshot.png)  
+![Weather App Screenshot](WeatherApp/screenshot .png)  
 
 ---
 
